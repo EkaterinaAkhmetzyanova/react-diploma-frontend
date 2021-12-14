@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -311,30 +312,3 @@ h2,
   border-color: #727e86;
 }
 
-/* custom */
-
-.navbar {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.collapase {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar-collapse {
-  width: 100%;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  list-style-type: none;
-}
-
-.nav-item {
-  margin-right: 10px;
-}
