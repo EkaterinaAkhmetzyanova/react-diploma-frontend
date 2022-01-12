@@ -4,6 +4,7 @@ import catalog from "../slices/catalogSlice";
 import item from "../slices/itemSlice";
 import searchForm from "../slices/searchFormSlice";
 import topSales from "../slices/topSalesSlice";
+import { load, save } from "./localStorage";
 
 export const store = configureStore({
   reducer: {
@@ -13,4 +14,9 @@ export const store = configureStore({
     searchForm,
     topSales,
   },
+  preloadedState: { cart: load("cart") },
+});
+
+store.subscribe(() => {
+  save("cart", store.getState().cart);
 });

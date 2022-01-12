@@ -45,13 +45,16 @@ export default function Catalog() {
           </div>
         )}
       </div>
-      {(loadMore && status.offset === "pending" && <Preloader />) || (
+      {loadMore && ((status.offset === "error" && (
+          <div handleError={() => dispatch(getAllCatalog(true))} />
+        )) ||
+      (status.offset === "pending" && <Preloader />) || (
         <div className="text-center">
           <button className="btn btn-outline-primary" onClick={handleOffset}>
             Загрузить ещё
           </button>
         </div>
-      )}
+      ))}
     </>
   );
 }

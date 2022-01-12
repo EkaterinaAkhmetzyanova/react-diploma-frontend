@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -313,18 +314,15 @@ h2,
 
 /* custom */
 
-.navbar {
+/* .navbar {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-}
-
-.collapase {
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .navbar-collapse {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -338,3 +336,16 @@ h2,
 .nav-item {
   margin-right: 10px;
 }
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.card-img-container {
+  box-sizing: border-box;
+} */
+
+
