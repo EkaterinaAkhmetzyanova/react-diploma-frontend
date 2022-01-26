@@ -14,7 +14,11 @@ export const store = configureStore({
     searchForm,
     topSales,
   },
-  preloadedState: { cart: load("cart") },
+  preloadedState: { cart: 
+    load("cart") || {
+      items: [],
+      status: "idle",
+    }},
 });
 
 store.subscribe(() => {
